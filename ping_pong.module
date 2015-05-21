@@ -59,8 +59,8 @@ function ping_pong_form_submit($form, &$form_state) {
 function ping_pong_success() {
     $output = '<ul>';
     foreach ($_SESSION['ping_pong_output'] as $value) {
-        $output = $output . '<li>' . $value . '<li>';
+        $output = $output . '<li>' . $value . '</li>';
     }
-    $output = $output . '<ul>';
+    $output = $output . '</ul>';
     return "Hooray! $output";
 }
